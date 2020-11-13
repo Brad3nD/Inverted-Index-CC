@@ -1,0 +1,8 @@
+rm -rf output *.jar *.class
+javac *.java
+jar -cvf invertedindex.jar ./*.class
+hadoop jar invertedindex.jar invertedindex input output
+
+
+
+
